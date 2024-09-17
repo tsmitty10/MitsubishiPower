@@ -1,0 +1,11 @@
+<div class="container">
+  <ag-grid-angular
+    class="ag-theme-quartz employee-table"
+    (rowClicked)="selectedRow($event)"
+    [rowData]="employees"
+    [columnDefs]="colDefs"
+    [noRowsOverlayComponent]="noRowsOverlayComponent"
+    [noRowsOverlayComponentParams]="noRowsOverlayComponentParams"
+    (modelUpdated)="onModelUpdated($event)"
+  />
+</div>

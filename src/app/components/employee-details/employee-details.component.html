@@ -1,0 +1,16 @@
+<header>
+  <a
+    class="button fancy-button back-button"
+    style="cursor: pointer"
+    (click)="goBack()"
+  >
+    <em class="material-icons">arrow_back</em>
+  </a>
+</header>
+@if (employee) {
+<div>
+  <app-employee-card [employee]="employee"></app-employee-card>
+</div>
+} @else {
+<app-employee-not-found></app-employee-not-found>
+}

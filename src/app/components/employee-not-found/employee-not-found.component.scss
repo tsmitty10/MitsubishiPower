@@ -1,0 +1,21 @@
+.employee-card {
+  width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.header-image {
+  background-image: url("../../../assets/avatar.jpg");
+  background-size: cover;
+  width: 150px;
+  height: 150px;
+}
+
+mat-card-header {
+  margin: 0 auto;
+  padding: 10px 10px 0;
+}
+
+.not-found {
+  margin: 0 auto;
+}

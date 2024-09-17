@@ -1,0 +1,28 @@
+<mat-card class="employee-card" appearance="outlined">
+  <mat-card-header>
+    <div class="header-image"></div>
+  </mat-card-header>
+  <mat-card-content>
+    <mat-card-title>{{ employee.employee_name }}</mat-card-title>
+    <mat-grid-list cols="3">
+      <mat-grid-tile>
+        <div>
+          <div>{{ employee.id }}</div>
+          <div><b>ID</b></div>
+        </div>
+      </mat-grid-tile>
+      <mat-grid-tile
+        ><div>
+          <div>{{ employee.employee_age }}</div>
+          <div><b>Age</b></div>
+        </div></mat-grid-tile
+      >
+      <mat-grid-tile
+        ><div>
+          <div>{{ currencyFormatter(employee.employee_salary) }}</div>
+          <div><b>Salary</b></div>
+        </div></mat-grid-tile
+      >
+    </mat-grid-list>
+  </mat-card-content>
+</mat-card>
